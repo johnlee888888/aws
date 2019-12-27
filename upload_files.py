@@ -15,7 +15,7 @@ for bucket in s3.buckets.all():
         break
 
 s3_client = boto3.client('s3')
-os.chdir('./static/images')
+os.chdir('/AWS/static/images')
 for i in os.walk(top='.'):
     for imag in i[2]:
         s3_client.upload_file(imag, bucket_name, '/static/images/' + imag, ExtraArgs={'ACL':'public-read'})

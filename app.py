@@ -2,7 +2,7 @@ from flask import Flask, render_template
 import os
 from insert_db_3_get_item import get_all_item
 # 默认目录为当前目录的templates
-template_dir = os.path.abspath('./templates')
+template_dir = os.path.abspath('/AWS/templates')
 
 app = Flask(__name__, template_folder=template_dir)
 
