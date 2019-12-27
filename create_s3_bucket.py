@@ -7,6 +7,8 @@
 # https://ke.qq.com/course/271956?tuin=24199d8a
 
 import boto3
+import os
+os.environ['AWS_DEFAULT_REGION'] = 'ap-northeast-2'
 
 s3 = boto3.client('s3')
-s3.create_bucket(Bucket='webapp-aws')
+s3.create_bucket(Bucket='webapp-aws', CreateBucketConfiguration={'LocationConstraint': AWS_DEFAULT_REGION})
