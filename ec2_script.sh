@@ -19,6 +19,7 @@ git clone https://gitee.com/qytang/AWS.git
 # 安装python 模块
 pip3 install boto3
 pip3 install flask
+pip3 install requests
 
 # 设置aws的region
 mkdir ~/.aws/
