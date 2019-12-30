@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="ec2-user@52.79.159.160:22" autoUploadExternalChanges="true">
+  <component name="PublishConfigData" autoUpload="Always" serverName="root@13.125.246.49:22" autoUploadExternalChanges="true">
     <serverData>
-      <paths name="ec2-user@52.79.159.160:22">
+      <paths name="AWS-EC2">
         <serverdata>
           <mappings>
-            <mapping deploy="/QYT" local="$PROJECT_DIR$" />
+            <mapping deploy="/AWS" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
@@ -34,6 +34,13 @@
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@13.125.246.49:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/AWS" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
