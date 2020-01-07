@@ -3,7 +3,7 @@ interface management0/0
 management-only
 nameif management
 security-level 100
-ip address dhcp setroute
+ip address dhcp
 no shut
 !
 same-security-traffic permit inter-interface
