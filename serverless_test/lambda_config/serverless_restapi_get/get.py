@@ -18,7 +18,7 @@ dynamodb = boto3.resource('dynamodb')
 
 
 def get(event, context):
-    table = dynamodb.Table('mytodos')
+    table = dynamodb.Table('qyt_serverless_table')
 
     # fetch todo from the database
     result = table.get_item(Key={'id': event['pathParameters']['id']})

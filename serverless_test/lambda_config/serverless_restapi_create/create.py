@@ -19,7 +19,7 @@ def create(event, context):
 
     timestamp = str(datetime.utcnow().timestamp())
 
-    table = dynamodb.Table('mytodos')
+    table = dynamodb.Table('qyt_serverless_table')
 
     item = {'id': str(uuid.uuid1()), 'text': data['text'], 'checked': False, 'createdAt': timestamp,
         'updatedAt': timestamp, }
