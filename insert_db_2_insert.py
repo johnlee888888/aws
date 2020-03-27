@@ -13,5 +13,5 @@ dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('staff')
 
 with table.batch_writer() as batch:
-    for student in stu_db:
-        batch.put_item(Item=student)
+    for staff in stu_db:
+        batch.put_item(Item=staff)
