@@ -8,7 +8,7 @@
 
 import boto3
 import os
-os.environ['AWS_DEFAULT_REGION'] = 'ap-northeast-2'
+os.environ['AWS_DEFAULT_REGION'] = 'ap-south-1'
 
 dynamodb = boto3.resource('dynamodb')
 
