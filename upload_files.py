@@ -10,12 +10,12 @@ import boto3
 import os
 s3 = boto3.resource('s3')
 for bucket in s3.buckets.all():
-    if bucket.name.startswith("webapp-"):
+    if bucket.name.startswith("webapplication-"):
         bucket_name = bucket.name
         break
 
 s3_client = boto3.client('s3')
-os.chdir('/AWS/static/images')
+os.chdir('/home/ec2-user/AWS/static/images')
 for i in os.walk(top='.'):
     for imag in i[2]:
         s3_client.upload_file(imag, bucket_name, '/static/images/' + imag, ExtraArgs={'ACL':'public-read'})
