@@ -1,0 +1,13 @@
+[Unit]
+Description = uWSGI instance to serve myweb
+After = network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/home/ec2-user/aws
+Environment="PATH=/home/ec2-user/aws/aws/bin"
+ExecStart=/home/ec2-user/aws/aws/bin/uwsgi --ini mywebflask.ini --uid ec2-user
+
+[Install]
+WantedBy=multi-user.target
